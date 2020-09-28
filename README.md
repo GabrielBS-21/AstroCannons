@@ -5,7 +5,7 @@ Sistema de canhões gerados automaticamente a partir de itens.
 
 Você pode encontrar o link para download [aqui](https://github.com/GabrielBS-21/AstroCannons/releases/tag/1.0).
 
-## How to use
+## Como usar
 
 Crie quantos canhões quiser pelo arquivo ``config.yml``
 
