@@ -1,0 +1,13 @@
+name: AstroCannons
+version: @version@
+main: me.gabriel.astrocannons.AstroCannons
+prefix: AstroCannons
+authors: [ GabrielBS ]
+description: Sistema de canhões gerados automaticamente a partir de itens.
+website: mercado-minecraft.com.br
+commands:
+  cannon:
+    aliases: [cannons, canhao, canhoes]
+    description: Comando principal do sistema de canhões.
+    permission: astrocannons.use
+    permission-message: §cVocê não tem permissão para utilizar este comando.
