@@ -1,0 +1,26 @@
+cannons:
+  c1:
+    settings:
+      successMessage: '&aVocê posicionou o canhão Simples'
+      schematic: 'canhaosimples.schematic'
+    item:
+      name: '&aCanhão Instantâneo'
+      texture: 'SKIN'
+      lore:
+        - ''
+        - ' &aNível: &fSimples'
+        - ''
+  c2:
+    settings:
+      successMessage: '&aVocê posicionou o canhão Mediano'
+      schematic: 'canhaomediano.schematic'
+    item:
+      name: '&aCanhão Instantâneo'
+      texture: 'SKIN'
+      lore:
+        - ''
+        - ' &aNível: &fMediano'
+        - ''
+
+messages:
+  notAllowedInThisZone: '&cVocê não pode colar um canhão nesta zona!'
