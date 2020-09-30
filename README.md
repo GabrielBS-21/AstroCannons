@@ -13,6 +13,8 @@ Copie a schematic do canhão virado para o norte (NORTH) para evitar bugs/falhas
 
 ## Dependências
 
-FAWE ([download](https://intellectualsites.github.io/download/fawe.html));
+FAWE ([download](https://intellectualsites.github.io/download/fawe.html))
+
 Factions ([download](https://dev.bukkit.org/projects/factions))
-MassiveCore ([download](https://dev.bukkit.org/projects/mcore))
+
+MassiveCore ([download](https://dev.bukkit.org/projects/mcore)).
