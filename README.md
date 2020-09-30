@@ -1,5 +1,5 @@
 # AstroCannons
-Sistema de canhões gerados automaticamente a partir de itens.
+Sistema de canhões gerados automaticamente a partir de itens. (Recomendado para Factions)
 
 # Download
 
