@@ -17,4 +17,4 @@ FAWE ([download](https://intellectualsites.github.io/download/fawe.html))
 
 Factions ([download](https://dev.bukkit.org/projects/factions))
 
-MassiveCore ([download](https://dev.bukkit.org/projects/mcore)).
+MassiveCore ([download](https://dev.bukkit.org/projects/mcore))
