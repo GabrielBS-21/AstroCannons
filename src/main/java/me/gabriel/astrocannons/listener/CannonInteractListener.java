@@ -9,7 +9,7 @@ import me.gabriel.astrocannons.manager.CannonManager;
 import me.gabriel.astrocannons.model.Cannon;
 import me.gabriel.astrocannons.utils.ItemComposer;
 import me.gabriel.astrocannons.utils.loader.SchematicLoader;
-import org.bukkit.ChatColor;
+import me.gabriel.astrocannons.utils.text.ColorHelper;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -47,22 +47,23 @@ public class CannonInteractListener implements Listener {
         MPlayer mp = MPlayer.get(player);
         Faction localFaction = BoardColl.get().getFactionAt(PS.valueOf(mp.getPlayer().getLocation()));
 
-        if (!localFaction.equals(FactionColl.get().getNone()) || !localFaction.equals(mp.getFaction())) {
+        if (localFaction.getName().equals(mp.getFaction().getName())
+                || localFaction.getName().equals(FactionColl.get().getNone().getName())) {
 
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', fileConfiguration.getString("messages.notAllowedInThisZone")));
-            return;
+            new SchematicLoader(cannon.getSchematicName(), player);
+            player.sendMessage(ColorHelper.format(cannon.getSuccessMessage()));
+
+        } else {
+
+            player.sendMessage(ColorHelper.format(fileConfiguration.getString("messages.notAllowedInThisZone")));
 
         }
 
         Action action = event.getAction();
 
-        if(action != Action.RIGHT_CLICK_AIR) {
+        if (action != Action.RIGHT_CLICK_AIR) {
             event.setCancelled(true);
-            return;
         }
-
-        new SchematicLoader(cannon.getSchematicName(), player);
-        player.sendMessage(ChatColor.translateAlternateColorCodes('&', cannon.getSuccessMessage()));
 
     }
 
