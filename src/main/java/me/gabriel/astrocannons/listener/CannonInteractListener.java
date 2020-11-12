@@ -38,7 +38,7 @@ public class CannonInteractListener implements Listener {
 
         String nbtTag = ItemComposer.getNBTTag(item, "AstroCannons");
 
-        if (nbtTag == null) return;
+        if (nbtTag == null || !cannonManager.getCannonMap().containsKey(nbtTag)) return;
 
         Cannon cannon = cannonManager.getCannonMap().get(nbtTag);
 
